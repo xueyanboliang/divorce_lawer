@@ -1,0 +1,19 @@
+/**index.wxss**/
+.ad {
+  width: 1280rpx;
+  height: 400rpx;
+}
+.list {
+  padding: 60rpx 40rpx;
+  background: #F2F2F2;
+}
+.personalCenter {
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.share {
+  margin-top: 20rpx;
+  height: 40rpx;
+  color: red;
+}

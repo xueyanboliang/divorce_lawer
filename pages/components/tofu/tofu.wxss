@@ -1,0 +1,48 @@
+/* pages/components/tofu/tofu.wxss */
+.tofu {
+  width: 1200rpx;
+  height: 480rpx;
+  padding: 80rpx;
+  border: 4rpx solid #ccc;
+  border-radius: 8rpx;
+  box-sizing: border-box;
+}
+.left {
+  float: left;
+}
+.img {
+  width: 480rpx;
+  height: 360rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+.right {
+  float: right;
+  position: relative;
+  border: 4rpx solid #ccc;
+  width: 540rpx;
+  height: 360rpx;
+  box-sizing: border-box;
+}
+.title {
+  font-size: 36rpx;
+  text-align: center;
+}
+.des {
+  font-size: 28rpx;
+  /* text-align: center; */
+}
+.btn {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 40rpx;
+  right: 160rpx;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  border: 4rpx solid red;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}

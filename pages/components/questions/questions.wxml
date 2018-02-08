@@ -1,0 +1,58 @@
+<!--pages/components/question/questions.wxml-->
+<view class="question">
+   <view class="progress">
+    <progress percent="{{percent}}" class="progressLine" stroke-width="8" />
+  </view>
+  <view class="title">
+    <text>{{order + 1}}、{{currentQuestion.title}}</text>
+  </view>
+  <view class="des" wx:if="{{currentQuestion.explaination}}">
+    <text>{{currentQuestion.explaination}}</text>
+  </view>
+  <view class='cut'></view>
+  <view class="opt">
+    <view class="line_frame"  wx:if='{{currentQuestion.types ==="line_frame"}}'>
+      <textarea class="textarea" placeholder="请输入您的补充说明，如无补充说明请留空">
+      </textarea>
+      <radio-group bindchange="radioChange">
+        <label class="radio" wx:for="{{currentQuestion.opts}}" wx:key="{{id}}" > 
+          <radio checked="{{item.checked}}" value="{{item.id}}"/> {{item.value}}
+          <input class="input"></input>
+          <text></text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="pramary" wx:if='{{currentQuestion.types ===""}}'>
+      <radio-group bindchange="radioChange">
+       <label class="radio" wx:for="{{currentQuestion.opts}}" wx:key="{{id}}" > 
+        <radio checked="{{item.checked}}" value="{{item.id}}"/> 
+        {{item.value}}
+       </label> 
+      </radio-group>
+    </view>
+    <view class="line" wx:if='{{currentQuestion.types ==="line"}}'>
+      <radio-group bindchange="radioChange">
+        <label class="radio" wx:for="{{currentQuestion.opts}}" wx:key="{{id}}" > 
+          <radio checked="{{item.checked}}" value="{{item.id}}"/> {{item.value}}
+          <input class="input"></input>
+          <text>元</text>
+        </label>
+      </radio-group>
+    </view>
+    <view class="dateSelect" wx:if='{{currentQuestion.types ==="dateSelect"}}'>
+      <picker mode="date" value="{{chosedValue}}" start="2018-01-01" end="2018-12-31" fields="day" bindchange="choose">
+        <view>
+          <radio-group bindChange="radioChange">
+            <label class="radio">
+              <radio></radio>
+              <text>当前选择：</text>
+              <input class="dateInput" value="{{chosedValue}}"></input>
+            </label>
+          </radio-group>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <button wx:if="{{order}}" class="prevBtn" size="default" type="warn" bindtap="prev">上一步</button>
+  <button class='{{order?"nextBtn":"firstBtn"}}' size="default" type="warn" bindtap="next" disabled="{{checked}}">{{btnContent}}</button>
+</view>

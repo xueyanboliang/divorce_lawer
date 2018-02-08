@@ -1,0 +1,15 @@
+<!--pages/components/question/tofu.wxml-->
+<view class="tofu"  id="{{content.associate_question}}" bindtap="enter">
+  <view class="left">
+    <image class="img" src="{{content.img_url}}"></image>
+  </view>
+  <view class="right">
+    <view class="title">
+      <text>{{content.title}}</text>
+    </view>
+    <view class="des">
+      <text>{{content.des}}</text>
+    </view>
+    <button class="btn">进入</button>
+  </view>
+</view>

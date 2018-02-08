@@ -1,0 +1,4 @@
+/* pages/questions/questions.wxss */
+.content {
+  width: 100%;
+}

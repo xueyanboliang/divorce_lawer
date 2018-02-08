@@ -1,0 +1,62 @@
+/* pages/components/question/questions.wxss */
+.question {
+  width: 100%;
+}
+.progress {
+  width: 100%;
+  height: 60rpx;
+  background-color: red;
+}
+.progressLine {
+  margin: 0 auto;
+  width: 80%;
+  border:1px solid #ccc;
+  border-radius: 8rpx;
+}
+.firstBtn {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 100%;
+  height: 80rpx;
+}
+.prevBtn {
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  width: 50%;
+  height: 80rpx;
+}
+.nextBtn {
+  position: fixed;
+  bottom: 0rpx;
+  left: 50%;
+  width: 50%;
+  height: 80rpx;
+}
+.cut {
+  margin: 20rpx auto;
+  width: 690rpx;
+  border: 1rpx solid #ccc;
+}
+.radio {
+  display: block;
+}
+.input {
+  display: inline-block;
+  width: 80rpx;
+  border: none;
+  border-bottom: 2rpx solid #ccc;
+}
+.textarea {
+  margin: 30rpx auto 0;
+  width: 690rpx;
+  height: 200rpx;
+  border: 2rpx solid red;
+}
+.dateInput {
+  display: inline-block;
+  width: 225rpx;
+  border: none;
+  border-bottom: 2rpx solid #ccc;
+}

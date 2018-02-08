@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <image class="ad" src="../../resources/pics/top.jpeg"></image>
+  </view>
+  <view class="list" wx:for="{{lists}}" wx:key="{{associate_question}}">
+    <tofu content="{{item}}"></tofu>
+  </view>
+  <view class="personalCenter">
+  <text>个人中心</text>
+  <rich-text nodes="{{node}}">></rich-text>
+  </view>
+  <view class="share">
+    <text>向好友分享小程序</text>
+  </view>
+</view>

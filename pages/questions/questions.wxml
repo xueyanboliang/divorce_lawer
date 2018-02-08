@@ -1,0 +1,4 @@
+<!--pages/questions/questions.wxml-->
+<view class="container">
+  <question  class="content" theQuestions="{{allQues}}"></question>
+</view>

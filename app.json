@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/questions/questions"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F4464B",
+    "navigationBarTitleText": "离婚律师",
+    "navigationBarTextStyle": "#FFFCF8"
+  }
+}
