@@ -636,7 +636,7 @@ let allQuestions = {
         }
       ],
       answer: ''
-    },
+    }
   ],
   damage_compensation: [
     {
@@ -766,11 +766,312 @@ let allQuestions = {
         }
       ],
       answer: ''
+    }
+  ],
+  divorce_proceedings: [
+    {
+      pId: [0],
+      title: '请问是否存在以下情形？（多选）',
+      types: 'multiple_choice',
+      explaination: '',
+      opts: [
+        {
+          id: 1,
+          value: '家庭暴力',
+          checked: false
+        },
+        {
+          id: 2,
+          value: '重婚',
+          checked: false
+        },
+        {
+          id: 3,
+          value: '与他人同居',
+          checked: false
+        },
+        {
+          id: 4,
+          value: '虐待、遗弃家庭成员',
+          checked: false
+        },
+        {
+          id: 5,
+          value: '感情破裂',
+          checked: false
+        },
+        {
+          id: 6,
+          value: '无',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [1, 2, 3, 4, 5, 6],
+      title: '是否存在以下纠纷？（多选）',
+      types: 'multiple_choice',
+      explaination: '',
+      opts: [
+        {
+          id: 7,
+          value: '财产分割',
+          checked: false
+        },
+        {
+          id: 8,
+          value: '抚养权/抚养费',
+          checked: false
+        },
+        {
+          id: 9,
+          value: '无',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [7, 8, 9],
+      title: '对方是否同意离婚',
+      types: 'multiple_choice',
+      explaination: '',
+      opts: [
+        {
+          id: 10,
+          value: '同意离婚',
+          checked: false
+        },
+        {
+          id: 11,
+          value: '不同意离婚',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [10, 11],
+      title: '您现在所处的阶段是？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 12,
+          value: '想马上离婚',
+          checked: false
+        },
+        {
+          id: 13,
+          value: '先了解情况',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [12, 13],
+      title: '您是否还有其他补充说明？',
+      types: 'line_frame',
+      explaination: '律师可能对您的问题进行补充解答，补充解答将以电话的方式联系您',
+      opts: [
+        {
+          id: 14,
+          value: '请输入您的手机号码（必填）',
+          checked: false
+        }
+      ],
+      answer: ''
+    }
+  ],
+  child_custody: [
+    {
+      pId: [0],
+      title: '该子女的年龄是？',
+      types: 'line',
+      explaination: '如有多个子女，请填写主要有纠纷的子女的年龄',
+      opts: [
+        {
+          id: 1,
+          value: '周岁',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [1],
+      title: '您是否还有其他补充说明？',
+      types: 'line_frame',
+      explaination: '律师可能对您的问题进行补充解答，补充解答将以电话的方式联系您',
+      opts: [
+        {
+          id: 2,
+          value: '请输入您的手机号码（必填）',
+          checked: false
+        }
+      ],
+      answer: ''
+    }
+  ],
+  childCare_expense: [
+    {
+      pId: [0],
+      title: '你属于以下那种情形',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 1,
+          value: '男方未按约定支付抚养费',
+          checked: false
+        },
+        {
+          id: 2,
+          value: '女方未按约定支付抚养费',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [1],
+      title: '该子女的年龄是？',
+      types: 'line',
+      explaination: '如有多个子女，请填写主要有纠纷的子女的年龄',
+      opts: [
+        {
+          id: 3,
+          value: '周岁',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [3],
+      title: '有无抚养费约定？',
+      types: 'line',
+      explaination: '抚养约定通常为判决书、协议书、调解书等',
+      opts: [
+        {
+          id: 4,
+          value: '有抚养费约定',
+          checked: false
+        },
+        {
+          id: 5,
+          value: '无抚养费约定',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [4, 8],
+      title: '男方的收入状况：',
+      types: 'line',
+      explaination: '月收入包括工资及其它收益',
+      opts: [
+        {
+          id: 6,
+          value: '月平均收入？元',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [6, 12],
+      title: '您是否还有其他补充说明？',
+      types: 'line_frame',
+      explaination: '律师可能对您的问题进行补充解答，补充解答将以电话的方式联系您',
+      opts: [
+        {
+          id: 7,
+          value: '请输入您的手机号码（必填）',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [5],
+      title: '目前支付的抚养费是？',
+      types: 'line',
+      explaination: '',
+      opts: [
+        {
+          id: 8,
+          value: '？元/月',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [2],
+      title: '该子女的年龄是？',
+      types: 'line',
+      explaination: '如有多个子女，请填写主要有纠纷的子女的年龄',
+      opts: [
+        {
+          id: 9,
+          value: '周岁',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [9],
+      title: '有无抚养费约定？',
+      types: 'line',
+      explaination: '抚养约定通常为判决书、协议书、调解书等',
+      opts: [
+        {
+          id: 10,
+          value: '有抚养费约定',
+          checked: false
+        },
+        {
+          id: 11,
+          value: '无抚养费约定',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [10, 13],
+      title: '女方的收入状况：',
+      types: 'line',
+      explaination: '月收入包括工资及其它收益',
+      opts: [
+        {
+          id: 12,
+          value: '月平均收入？元',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [11],
+      title: '目前支付的抚养费是？',
+      types: 'line',
+      explaination: '',
+      opts: [
+        {
+          id: 13,
+          value: '？元/月',
+          checked: false
+        }
+      ],
+      answer: ''
     },
   ],
-  divorce_proceedings: [],
-  child_custody: [],
-  childCare_expense: [],
   other_questions: []
 }
 module.exports = {
