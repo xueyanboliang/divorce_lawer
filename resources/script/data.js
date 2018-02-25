@@ -126,7 +126,7 @@ let allQuestions = {
       answer: ''
     },
     {
-      pId: [10, 18],
+      pId: [10, 18, 48, 49, 50, 51, 52, 53, 54, 58],
       title: '您是否还有其他补充说明？',
       types: 'line_frame',
       explaination: '律师可能对您的问题进行补充解答，补充解答将以电话的方式联系您',
@@ -417,9 +417,357 @@ let allQuestions = {
         }
       ],
       answer: ''
-    }
+    },
+    {
+      pId: [46],
+      title: '该房产的登记人是？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 48,
+          value: '婚后以共同财产购买，登记在夫妻一方名下',
+          checked: false
+        },
+        {
+          id: 49,
+          value: '婚后以共同财产购买，登记在父母名下',
+          checked: false
+        },
+        {
+          id: 50,
+          value: '婚后以个人财产购买，登记在夫妻一方名下',
+          checked: false
+        },
+        {
+          id: 51,
+          value: '双方或一方主张所有权',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [47],
+      title: '夫妻对该房屋的处理意见是？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 52,
+          value: '双方均不主张房屋所有权',
+          checked: false
+        },
+        {
+          id: 53,
+          value: '双方均主张房屋所有权且不同意回购或转让',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [14],
+      title: '离婚的日期是？',
+      types: 'dateSelect',
+      explaination: '离婚日期指民政局办理离婚证书的日期',
+      opts: [
+        {
+          id: 54,
+          value: '',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [3],
+      title: '您是否和对方已登记结婚？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 55,
+          value: '还没有登记结婚',
+          checked: false
+        },
+        {
+          id: 56,
+          value: '已登记结婚，准备离婚',
+          checked: false
+        },
+        {
+          id: 57,
+          value: '已登记结婚，但已经离婚',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [55, 61, 62, 63, 64, 65, 66, 67, 70, 71],
+      title: '财产的大致估值是？',
+      types: 'line',
+      explaination: '此处的财产指现金、房产及其他不动产、股权、投资收益、债务等',
+      opts: [
+        {
+          id: 58,
+          value: '财产估值？万元',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [56],
+      title: '结婚登记日期是？',
+      types: 'dateSelect',
+      explaination: '结婚登记日期指领结婚证的日期',
+      opts: [
+        {
+          id: 59,
+          value: '',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [59],
+      title: '双方是否共同生活过？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 60,
+          value: '共同生活',
+          checked: false
+        },
+        {
+          id: 61,
+          value: '未共同生活',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [60],
+      title: '双方是否存在以下情形？（多选）',
+      types: 'multiple_choice',
+      explaination: '',
+      opts: [
+        {
+          id: 62,
+          value: '家庭暴力',
+          checked: false
+        },
+        {
+          id: 63,
+          value: '重婚',
+          checked: false
+        },
+        {
+          id: 64,
+          value: '与他人同居',
+          checked: false
+        },
+        {
+          id: 65,
+          value: '虐待、遗弃家庭成员',
+          checked: false
+        },
+        {
+          id: 66,
+          value: '无',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [57],
+      title: '离婚的日期是？',
+      types: 'dateSelect',
+      explaination: '离婚日期指民政局办理离婚证书的日期',
+      opts: [
+        {
+          id: 67,
+          value: '',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [4],
+      title: '您在什么时候发现财产被转移？',
+      types: '',
+      explaination: '离婚日期指民政局办理离婚证书的日期',
+      opts: [
+        {
+          id: 68,
+          value: '离婚前发现转移',
+          checked: false
+        },
+        {
+          id: 69,
+          value: '离婚后发现转移',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [68, 69],
+      title: '财产被转移的时间是？',
+      types: '',
+      explaination: '离婚前一年即办理离婚手续之前的一年',
+      opts: [
+        {
+          id: 70,
+          value: '离婚前一年内被转移',
+          checked: false
+        },
+        {
+          id: 71,
+          value: '离婚前一年以上被转移',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
   ],
-  damage_compensation: [],
+  damage_compensation: [
+    {
+      pId: [0],
+      title: '您目前所处的阶段是？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 1,
+          value: '已登记结婚，准备离婚',
+          checked: false
+        },
+        {
+          id: 2,
+          value: '已登记结婚，但已经离婚',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [1, 2],
+      title: '您受到以下哪种伤害？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 3,
+          value: '家庭暴力',
+          checked: false
+        },
+        {
+          id: 4,
+          value: '被出轨',
+          checked: false
+        },
+        {
+          id: 5,
+          value: '其他',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [3],
+      title: '请问是否有相关证据？',
+      types: '',
+      explaination: '证据包括但不限于录音、视频、照片、报警回执、医院诊断证明等',
+      opts: [
+        {
+          id: 6,
+          value: '有证据',
+          checked: false
+        },
+        {
+          id: 7,
+          value: '无证据',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [6, 7, 12, 13],
+      title: '财产的大致估值是？',
+      types: 'line',
+      explaination: '此处的财产指现金、房产及其他不动产、股权、投资收益、债务等',
+      opts: [
+        {
+          id: 8,
+          value: '财产估值？万元',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [8],
+      title: '您现在所处的阶段是？',
+      types: '',
+      explaination: '',
+      opts: [
+        {
+          id: 9,
+          value: '想马上离婚',
+          checked: false
+        },
+        {
+          id: 10,
+          value: '先了解情况',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [9, 10],
+      title: '您是否还有其他补充说明？',
+      types: 'line_frame',
+      explaination: '律师可能对您的问题进行补充解答，补充解答将以电话的方式联系您',
+      opts: [
+        {
+          id: 11,
+          value: '请输入您的手机号码（必填）',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+    {
+      pId: [4, 5],
+      title: '请问是否有相关证据',
+      types: '',
+      explaination: '证据包括但不限于录音、视频、照片等',
+      opts: [
+        {
+          id: 12,
+          value: '有证据',
+          checked: false
+        },
+        {
+          id: 13,
+          value: '无证据',
+          checked: false
+        }
+      ],
+      answer: ''
+    },
+  ],
   divorce_proceedings: [],
   child_custody: [],
   childCare_expense: [],
