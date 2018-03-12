@@ -1,6 +1,10 @@
 // pages/components/question/questions.js
 let findQuestion = require("../../../utils/util.js").findQuestion
 let index = 0
+//已经勾选过的答案
+let chosedAnswers = []
+//已经做过的题目
+let chosedQuestions = []
 Component({
   properties: {
     theQuestions: {
@@ -42,6 +46,8 @@ Component({
         checked: true,
         order: index
       })
+      chosedQuestions.pop(this.data.currentQuestion)
+      chosedAnswers.pop(this.data.chosedOption)
     },
     next: function () {
       index++
@@ -61,6 +67,8 @@ Component({
           order: index
         })
       }
+      chosedQuestions.push(this.data.currentQuestion)
+      chosedAnswers.push(this.data.chosedOption)
     }
   }
 })
